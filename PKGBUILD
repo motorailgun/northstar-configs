@@ -16,9 +16,10 @@ sha256sums=(
 
 
 package() {
+    cp -r "tif2" "$pkgdir/etc/ns-docker/tif2"
+
     cd northstar-configs
     
-    cp -r "tif2" "$pkgdir/etc/ns-docker/"
     install -Dm755 ns-docker.sh "$pkgdir/etc/ns-docker/ns-docker.rb"
     install -Dm755 env.rb "$pkgdir/etc/ns-docker/env.rb"
     install -Dm755 ssh-tunnel.sh "$pkgdir/etc/ns-docker/ssh-tunnel.sh"
