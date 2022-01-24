@@ -7,10 +7,22 @@ license=("GPLv3")
 depends=("ruby" "docker")
 
 source=(
-    'git+https://github.com/motorailgun/northstar-configs'
+    tif2.tar
+    ns-docker.sh
+    env.rb
+    ssh-tunnel.sh
+    ns-config.json
+    ns-ssh-tunnel.service
+    northstar-docker.service
     )
 
 sha256sums=(
+    'SKIP'
+    'SKIP'
+    'SKIP'
+    'SKIP'
+    'SKIP'
+    'SKIP'
     'SKIP'
     )
 
@@ -20,7 +32,7 @@ package() {
 
     cd northstar-configs
     
-    install -Dm755 ns-docker.sh "$pkgdir/etc/ns-docker/ns-docker.rb"
+    install -Dm755 ns-docker.sh "$pkgdir/etc/ns-docker/ns-docker.sh"
     install -Dm755 env.rb "$pkgdir/etc/ns-docker/env.rb"
     install -Dm755 ssh-tunnel.sh "$pkgdir/etc/ns-docker/ssh-tunnel.sh"
     install -Dm644 ns-config.json "$pkgdir/etc/ns-docker/ns-config.json"
