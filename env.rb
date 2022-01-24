@@ -14,7 +14,11 @@ config.each_pair{|key, val|
     else
         ex_args = ""
         val.each_pair{|conkey, convar|
-            ex_args += "#{conkey} '#{conver}' "
+            if conver.to_i.to_s.length == conver.length then
+                ex_args += "#{conkey} #{conver} "    
+            else
+                ex_args += "#{conkey} '#{conver}' "
+            end
         }
         env_string += "--env #{key}=\"#{ex_args}\""
     end
