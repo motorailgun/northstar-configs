@@ -28,6 +28,7 @@ sha256sums=(
 
 
 package() {
+    mkdir -p "$pkgdir/etc/ns-docker/tif2"
     cp -r "tif2" "$pkgdir/etc/ns-docker/tif2"
 
     cd northstar-configs
