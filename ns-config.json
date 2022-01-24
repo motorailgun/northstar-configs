@@ -1,0 +1,15 @@
+{
+    "NS_SERVER_NAME": "",
+    "NS_SERVER_DESC": "",
+    "NS_SERVER_PASSWORD": "",
+    "NS_EXTRA_ARGUMENTS":[
+        {"+mpgamemode": "ps"},
+        {"+ns_should_return_to_lobby": "0"},
+        {"+setplaylistvaroverrides": 
+            [
+                "max_players 16",
+                "run_epilogue 0"
+            ]
+        }
+    ]
+}

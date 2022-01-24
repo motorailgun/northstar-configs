@@ -1,0 +1,13 @@
+[Unit]
+Description=Northstar SSH Tunnel
+RefuseManualStart=no
+RefuseManualStop=no
+Requires=network.service
+After=network.service
+
+[Service]
+Type=simple
+ExecStart=/etc/ns-docker/ssh-tunnel.sh
+
+[Install]
+WantedBy=multi-user.target

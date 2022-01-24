@@ -1,0 +1,11 @@
+[Unit]
+Description=Docker Northstar
+Requires=docker.service
+After=docker.service
+
+[Service]
+Type=simple
+ExecStart=ns-docker.sh
+
+[Install]
+WantedBy=multi-user.target
