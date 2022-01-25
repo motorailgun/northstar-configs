@@ -7,7 +7,7 @@ After=network.service
 
 [Service]
 Type=simple
-ExecStart=/bin/bash /etc/ns-docker/ssh-tunnel.sh
+ExecStart=/etc/ns-docker/ssh-tunnel.sh
 
 [Install]
 WantedBy=multi-user.target

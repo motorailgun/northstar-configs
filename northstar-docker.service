@@ -5,7 +5,7 @@ After=docker.service
 
 [Service]
 Type=simple
-ExecStart=/bin/bash /etc/ns-docker/ns-docker.sh
+ExecStart=/etc/ns-docker/ns-docker.sh
 
 [Install]
 WantedBy=multi-user.target
