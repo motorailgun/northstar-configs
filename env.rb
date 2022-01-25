@@ -15,7 +15,7 @@ config.each_pair{|key, val|
         ex_args = ""
         val.each{|hash|
             conkey = hash.keys[0]
-            hash[conkey] = hash[conkey]
+            conver = hash[conkey]
             if conkey == "+setplaylistvaroverrides" then
                 ex_args += "#{conkey} '#{conver.join(' ')}' "
             elsif conver.to_i.to_s.length == conver.length then

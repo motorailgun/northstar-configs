@@ -2,8 +2,8 @@
 Description=Northstar SSH Tunnel
 RefuseManualStart=no
 RefuseManualStop=no
-Requires=network.service
-After=network.service
+Requires=network.target
+After=network.target
 
 [Service]
 Type=simple
