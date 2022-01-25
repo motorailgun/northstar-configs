@@ -7,6 +7,7 @@ After=docker.service
 
 [Service]
 Type=simple
+Restart=always
 ExecStart=/etc/ns-docker/ns-docker.sh
 
 [Install]
