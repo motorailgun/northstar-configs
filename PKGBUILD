@@ -31,7 +31,6 @@ package() {
     mkdir -p "$pkgdir/etc/ns-docker/tif2"
     cp -r "tif2" "$pkgdir/etc/ns-docker/tif2"
 
-    cd northstar-configs
     
     install -Dm755 ns-docker.sh "$pkgdir/etc/ns-docker/ns-docker.sh"
     install -Dm755 env.rb "$pkgdir/etc/ns-docker/env.rb"
