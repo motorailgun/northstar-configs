@@ -1,3 +1,5 @@
+#!/bin/bash
+
 USERNAME=""
 KEY_FILE=""
 HOST=""

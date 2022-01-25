@@ -1,3 +1,4 @@
+#!/bin/bash
 ENVS=`/etc/ns-docker/env.rb`
 
 if test $(nproc --all) -lt 3 ; then
