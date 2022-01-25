@@ -1,5 +1,7 @@
 [Unit]
 Description=Docker Northstar
+RefuseManualStart=no
+RefuseManualStop=no
 Requires=docker.service
 After=docker.service
 
