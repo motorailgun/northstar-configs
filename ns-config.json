@@ -3,12 +3,16 @@
     "NS_SERVER_DESC": "",
     "NS_SERVER_PASSWORD": "",
     "NS_EXTRA_ARGUMENTS":[
-        {"+mpgamemode": "ps"},
+	{"+setplaylist": "private_match"},
+        {"+mp_gamemode": "ps"},
+	{"+ns_private_match_last_mode": "ps"},
+	{"+sv_updaterate_mp": "60"},
         {"+ns_should_return_to_lobby": "0"},
         {"+setplaylistvaroverrides": 
             [
                 "max_players 16",
-                "run_epilogue 0"
+                "run_epilogue 0",
+		"ns_private_match_only_host_can_change_settings 2"
             ]
         }
     ]
