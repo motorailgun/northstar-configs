@@ -29,7 +29,7 @@ sha256sums=(
 
 package() {
     mkdir -p "$pkgdir/etc/ns-docker/tif2"
-    cp -r "tif2" "$pkgdir/etc/ns-docker/tif2"
+    cp -r "tif2" "$pkgdir/etc/ns-docker/"
 
     
     install -Dm755 ns-docker.sh "$pkgdir/etc/ns-docker/ns-docker.sh"
